@@ -1,0 +1,49 @@
+%! Author = Jan
+%! Date = 03.08.2022
+
+% Preamble
+\documentclass[fontsize=6pt]{scrreprt}
+\RequirePackage[paperheight=100mm,paperwidth=65mm,margin=4mm,heightrounded]{geometry}
+\RequirePackage[ngerman]{babel}
+\RequirePackage{fontspec}
+\RequirePackage{enumitem}
+\RequirePackage{standalone}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setmainfont{Arial}
+
+% Document
+\begin{document}
+  \textbf{Entdecken:}
+  1 Spielplanplättchen nehmen, an ein eigenes, offenes Gebiet anlegen, ggfs. Kreatur erscheinen lassen und aktivieren.
+
+  \textbf{Rekrutieren:}
+  In einem eigenen Gebiet 1 Einheit + 1 Einheit pro Ausbildungslager hinzufügen.
+
+  \textbf{Bauen:}
+  In einem eigenen Gebiet 1 Gebäude platzieren und Baukosten bezahlen. 1 Holz für kleine, 3 Holz für große Gebäude. Steine nur auf kleine Felder mit Steinsymbol.
+
+  \textbf{Bewegen:}
+  \begin{enumerate}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=12pt]
+    \item Beliebig viele Einheiten aus einem eigenen Gebiet in ein benachbartes Gebiet. Kosten:
+    \begin{enumerate}[label=\textbf{\arabic*x}, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=10pt]
+      \item Bewegungspunkt für eine normale Grenze
+      \item Bewegungspunkte für eine raue (gelbe) Grenze
+    \end{enumerate}
+    \item Nach Betreten eines feindlichen Gebiets können diese Einheiten nicht weiter bewegt werden, hier kommt es zum Kampf.
+    \item So oft 1. wiederholen bis Bewegungspunkte aufgebraucht - oder Rest verfallen lassen.
+    \item Kämpfe abhandeln.
+  \end{enumerate}
+
+  \textbf{Kampf:}
+  \begin{enumerate}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=12pt]
+    \item Zähle Kampfpunkte (1 pro Einheit + evtl. Karten/ Gebäudebonus)
+    \item Pro Einheit bis zu 1 Nahrung als Kampfpunkt hinzufügen (Angreifer fängt an)
+    \item Würfeln mit einem Würfel (Angreifer fängt an)
+    \item Der Spieler mit mehr Kampfpunkten gewinnt, bei Gleichstand gewinnt der Verteidiger.
+    \item Sterben alle Einheiten eines Spielers ist der Kampf verloren.
+  \end{enumerate}
+
+  \textbf{Handeln (Bei Ernte):} 3 (beliebige) : 1
+\end{document}
