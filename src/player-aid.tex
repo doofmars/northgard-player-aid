@@ -2,80 +2,34 @@
 %! Date = 03.08.2022
 
 % Preamble
-\documentclass[6pt]{scrreprt}
-\usepackage[paperheight=100mm,paperwidth=65mm,margin=4mm,heightrounded]{geometry}
-\usepackage[ngerman]{babel}
-\usepackage{fontspec}
-\usepackage{enumitem}
+\documentclass[fontsize=6pt]{scrreprt}
+\RequirePackage[a4paper, landscape,
+top=0.5cm,
+bottom=0.5cm,
+left=0.5cm,
+right=0.5cm,
+footskip=0cm]{geometry}
+\RequirePackage[ngerman]{babel}
+\RequirePackage{fontspec}
+\RequirePackage{enumitem}
+\RequirePackage{standalone}
+\usepackage{framed}
 
+\pagenumbering{gobble}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
 \setmainfont{Arial}
 
-% Packages
-
 % Document
 \begin{document}
-  \textbf{Entdecken:}
-  1 Spielplanplättchen nehmen, an ein eigenes, offenes Gebiet anlegen, ggfs. Kreatur erscheinen lassen und aktivieren.
-
-  \textbf{Rekrutieren:}
-  In einem eigenen Gebiet 1 Einheit + 1 Einheit pro Ausbildungslager hinzufügen.
-
-  \textbf{Bauen:}
-  In einem eigenen Gebiet 1 Gebäude platzieren und Baukosten bezahlen. 1 Holz für kleine, 3 Holz für große Gebäude. Steine nur auf kleine Felder mit Steinsymbol.
-
-  \textbf{Bewegen:}
-  \begin{enumerate}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=12pt]
-    \item Beliebig viele Einheiten aus einem eigenen Gebiet in ein benachbartes Gebiet. Kosten:
-    \begin{enumerate}[label=\textbf{\arabic*x}, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=10pt]
-      \item Bewegungspunkt für eine normale Grenze
-      \item Bewegungspunkte für eine raue (gelbe) Grenze
-    \end{enumerate}
-    \item Nach Betreten eines feindlichen Gebiets können diese Einheiten nicht weiter bewegt werden, hier kommt es zum Kampf.
-    \item So oft 1. wiederholen bis Bewegungspunkte aufgebraucht - oder Rest verfallen lassen.
-    \item Kämpfe abhandeln.
-  \end{enumerate}
-
-  \textbf{Kampf:}
-  \begin{enumerate}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=12pt]
-    \item Zähle Kampfpunkte (1 pro Einheit + evtl. Karten/ Gebäudebonus)
-    \item Pro Einheit bis zu 1 Nahrung als Kampfpunkt hinzufügen (Angreifer fängt an)
-    \item Würfeln mit einem Würfel (Angreifer fängt an)
-    \item Der Spieler mit mehr Kampfpunkten gewinnt, bei Gleichstand gewinnt der Verteidiger.
-    \item Sterben alle Einheiten eines Spielers ist der Kampf verloren.
-  \end{enumerate}
-
-  \textbf{Handeln (Bei Ernte):} 3 (beliebige) : 1
-
-  \pagebreak
-
-  \textbf{Spielaufbau:}
-
-
-  \begin{table}[htp]
-    \textbf{Entwicklungskarten:}
-    \centering
-    \label{tab:development_cards}
-    \begin{tabular}{c|cccc}
-      Kartenart & 2 Sp & 3 Sp & 4 Sp & 5 Sp \\ \hline
-      .      & 4 & 6  & 8  & 10 \\
-      ..     & 8 & 12 & 16 & 20 \\
-      \ldots & 2 & 3  & 4  & 5  \\
-    \end{tabular}
-  \end{table}
-
-  \textbf{Startresourcen:}
-  \begin{itemize}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=12pt]
-    \item 2--3 Spieler: 2 Äpfel 2 Holz
-    \item 4--5 Spieler: 3 Äpfel 2 Holz
-  \end{itemize}
-
-  \textbf{Siegbedingungen:}
-  \center
-  Am Jahresende 3 geschlossene Gebiete mit großem Gebäude unter eigener Kontrolle.
-
-  oder
-
-  Die meisten Ruhmpunkte am Spielende.
+  \begin{minipage}[t][100mm]{65mm}
+    \begin{framed}
+      \include{player-aid-front}
+    \end{framed}
+  \end{minipage}
+  \begin{minipage}[t][100mm]{65mm}
+    \begin{framed}
+      \include{player-aid-back}
+    \end{framed}
+  \end{minipage}
 \end{document}
