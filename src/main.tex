@@ -3,6 +3,7 @@
 
 % Preamble
 \documentclass{scrreprt}
+\RequirePackage[a4paper, landscape]{geometry}
 \usepackage[final]{pdfpages}
 
 \usepackage{standalone}
@@ -10,8 +11,8 @@
 \begin{document}
   \includepdfset{pages=-,noautoscale}
 
-  \includepdf[frame, pages={1,1,1,1,1,1,1,1,1}, nup=3x3]{../out/player-aid-front.pdf}
-  \includepdf[frame, pages={1,1,1,1,1,1,1,1,1}, nup=3x3]{../out/player-aid-back.pdf}
+  \includepdf[frame, pages={1,1,1,1,1,1}, nup=3x2]{../out/player-aid-front.pdf}
+  \includepdf[frame, pages={1,1,1,1,1,1}, nup=3x2]{../out/player-aid-back.pdf}
 
 
 \end{document}
